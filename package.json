@@ -1,0 +1,17 @@
+{
+  "name": "war",
+  "version": "1.0.0",
+  "description": "",
+  "main": "war.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-entities": "^2.3.2",
+    "play-sound": "^1.1.5",
+    "request": "^2.88.2",
+    "striptags": "^3.2.0"
+  }
+}
