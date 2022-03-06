@@ -28,8 +28,9 @@ function textToSpeech(text) {
         .get("https://runa.tilde.lv/client/say/lt-regina?text=" + encodeURIComponent(text) + "&tempo=1&pitch=1")
         .pipe(fs.createWriteStream('output.mp3'))
         .on('finish', () => {
+            //player.player = 'powershell';
             player.play('./output.mp3');
         })
 }
 
-playNews() && setInterval(playNews, 60000 * 2);
+setInterval(playNews, 60000 * 2) && playNews();
