@@ -16,7 +16,6 @@ function playNews() {
         message.stripped = message.stripped.replace(/(?:https?|ftp):\/\/[\n\S]+/g, ' nuoroda'); // Remove links
         if(lastPlayed.created !== message.created && message.origin_id !== lastPlayed.id) {
             lastPlayed = message;
-            console.log(message);
             process.stdout.write('...\n\x1b[32m' + message.stripped + '\n');
             textToSpeech("Pyp pyp pup, karo naujiena. " + message.stripped + " Pyp pyp pup");
         } else {
